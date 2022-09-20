@@ -36,7 +36,8 @@
                 Console.ForegroundColor = ConsoleColor.Gray;
                 Console.WriteLine("Kvar att fråga: " + studentsToAsk.Count);
                 Console.ForegroundColor = ConsoleColor.Green;
-                Console.WriteLine(student);
+                //dotnet add package FIGlet.Net --version 1.1.2
+                Console.WriteLine(new WenceyWang.FIGlet.AsciiArt(student));
                 studentsToAsk.Remove(student);
 
                 //Kolla om vi trycker ESC, isf avsluta programmet
